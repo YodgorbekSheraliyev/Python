@@ -1,0 +1,3 @@
+[console_scripts]
+cleanify = cleanify.main:main
+

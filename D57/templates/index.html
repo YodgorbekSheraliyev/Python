@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+</head>
+<body>
+    {% for item in data %}
+    {% if item.id ==2 %}
+     <h1>{{item.title}}</h1>
+     {% endif%}
+     {% endfor %}
+     <!-- {{data}} -->
+     
+     <a href="{{ url_for('go_blog') }}">wefwef</a>
+</body>
+</html>

@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: cleanify
+Version: 1.0.0
+Summary: CLI utility to remove remove newlines, tabs from a file and copy it to your clipboard
+Home-page: https://github.com/http-samc/cleanify
+Author: Samarth Chitgopekar
+Author-email: sam@chitgopekar.tech
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Topic :: Utilities
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Natural Language :: English
+Description-Content-Type: text/markdown
+Requires-Dist: klembord (==0.2.2)
+
+# cleanify
+CLI utility to remove remove newlines, tabs from a file and copy it to your clipboard
+- Pure 🐍 with only [klembord](https://pypi.org/project/klembord/) used in the Tech Stack as a clipboard API
+
+## Installation
+1. From PyPI (requires Python and PIP)
+`pip install cleanify`
+
+2. From source (requires Python)
+   1. Clone this repository
+   2. Start a terminal in the repository's folder
+      1. Run `python setup.py install`
+
+## Use
+1. In your terminal, type `cleanify --file {your filepath - relative OR absolute}`
+2. The cleanified string will be copied to your clipboard
+
+Supported Flags:
+|Flag|Required|Description|
+|---|---|---|
+|`-file`, `-f`|`true`|The path {relative or absolute} to the target file|
+|`--repQuotes`, `--rq`|`false`|Whether you want to replace double quotes with single ones (useful for HTML stored as JSON). Defaults to `false`|
+
